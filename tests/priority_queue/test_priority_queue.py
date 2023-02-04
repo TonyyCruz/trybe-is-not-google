@@ -15,7 +15,7 @@ mock_priority_data_four = {
 }
 
 mock_common_data = {
-    "nome_do_arquivo": "arquivo_priority.txt",
+    "nome_do_arquivo": "arquivo_common.txt",
     "qtd_linhas": 6,
     "linhas_do_arquivo": ["a", "b", "c", "d", "e", "f"]
 }
