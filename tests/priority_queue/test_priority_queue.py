@@ -29,10 +29,10 @@ def test_basic_priority_queueing():
     priorityQueue.enqueue(mock_common_data)
     priorityQueue.enqueue(mock_priority_data_three)
 
-    assert priorityQueue.__len__() == 5
     assert priorityQueue.search(0) == mock_priority_data_four
     assert priorityQueue.search(1) == mock_priority_data_three
     assert priorityQueue.search(2) == mock_common_data
+    assert priorityQueue.__len__() == 5
 
     with pytest.raises(IndexError, match="Invalid index"):
         priorityQueue.search(5)
